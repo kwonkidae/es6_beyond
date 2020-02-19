@@ -22,12 +22,13 @@
     args.shift();
     console.log(...args);
   }
+
   function bar() {
     var args = Array.prototype.slice.call(arguments);
 
     args.push(4, 5);
 
-    args = args.filter(function(v) {
+    args = args.filter(function (v) {
       return v % 2 == 0;
     });
 
