@@ -4,8 +4,8 @@
   } = {}, {
     y
   } = {
-    y: 10
-  }) {
+    y: 10,
+  }, ) {
     console.log(x, y);
   }
   f6();
@@ -16,10 +16,10 @@
   f6(undefined, {});
 
   f6({
-    x: 2
+    x: 2,
   }, {
-    y: 3
-  });
+    y: 3,
+  }, );
 })();
 
 (() => {
@@ -27,19 +27,19 @@
     options: {
       remove: true,
       enable: false,
-      instance: {}
+      instance: {},
     },
     log: {
       warn: true,
-      error: true
-    }
+      error: true,
+    },
   };
 
   var config = {
     options: {
       remove: false,
-      instance: null
-    }
+      instance: null,
+    },
   };
 
   {
@@ -47,27 +47,25 @@
       options: {
         remove = defaults.options.remove,
         enable = defaults.options.enable,
-        instance = defaults.options.instance
+        instance = defaults.options.instance,
       } = {},
       log: {
         warn = defaults.log.warn,
         error = defaults.log.error
-      } = {}
+      } = {},
     } = config;
     config = {
       options: {
         remove,
         enable,
-        instance
+        instance,
       },
       log: {
         warn,
-        error
-      }
+        error,
+      },
     };
   }
-
-
 
   console.log(config);
 })();

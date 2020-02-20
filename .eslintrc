@@ -26,7 +26,9 @@
     "linebreak-style": "off",
     "global-require": "off",
     "semi": "warn",
-    "no-multiple-empty-lines": ["warn", { "max": 1 }],
+    "no-multiple-empty-lines": ["warn", {
+      "max": 1
+    }],
     "no-param-reassign": "off",
     "function-paren-newline": "off",
     "arrow-parens": ["error", "always"],

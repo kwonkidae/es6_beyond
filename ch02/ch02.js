@@ -38,7 +38,7 @@
   var funcs = [];
 
   for (var i = 0; i < 5; i++) {
-    funcs.push(function () {
+    funcs.push(function _some() {
       console.log(i);
     });
   }
