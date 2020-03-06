@@ -48,6 +48,7 @@ const l = console.log;
 })();
 
 (() => {
+  return;
   var re = /\d+\.\s(.*?)(?:\s|$)/y,
     str = '1. foo 2. bar 3. baz';
 
@@ -57,4 +58,14 @@ const l = console.log;
   l(re.lastIndex);
   l(str.match(re));
   l(re.lastIndex);
+})();
+
+(() => {
+  var re = /o+./g,
+    str = 'foot book more';
+
+  l(re.exec(str), re.lastIndex);
+  l(re.exec(str), re.lastIndex);
+  l(re.exec(str), re.lastIndex);
+  l(re.exec(str), re.lastIndex);
 })();
