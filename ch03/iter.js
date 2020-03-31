@@ -123,3 +123,25 @@
     console.log(i);
   }
 })();
+
+(() => {
+  console.clear();
+  var a = [1, 2, 3, 4, 5];
+  function foo(x, y, z, w, p) {
+    console.log(x + y + z + w + p);
+  }
+
+  foo(...a);
+
+  var b = [0, ...a, 6];
+
+  foo(...b);
+
+  var it = a[Symbol.iterator]();
+
+  var [x, y] = it;
+  var [z, ...w] = it;
+
+  console.log(it.next());
+  console.log(x, y, z, ...w);
+})();
