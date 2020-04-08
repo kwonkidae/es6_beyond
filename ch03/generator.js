@@ -39,7 +39,6 @@
 })();
 
 (() => {
-  return;
   function* foo() {
     yield 1;
     yield 2;
@@ -48,8 +47,8 @@
   }
 
   function* bar() {
-    var x = yield* foo();
-    console.log(x);
+    yield* foo();
+    // console.log(x);
   }
 
   let b = bar();
@@ -72,6 +71,7 @@
 })();
 
 (() => {
+  return;
   function* foo() {
     yield 1;
     yield 2;
@@ -84,6 +84,7 @@
 })();
 
 (() => {
+  return;
   function* foo() {
     var x = yield 1;
     var y = yield 2;
